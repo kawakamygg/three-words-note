@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix ."
+    "format": "prettier --write .js,.jsx,.ts,.tsx .",
+    "lint": "eslint --fix .js,.jsx,.ts,.tsx .",
+    "fix": "npm run format && npm run lint"
   },
   "husky": {
     "hooks": {
