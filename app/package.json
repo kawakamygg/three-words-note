@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "mock": "npm start --prefix mock",
+    "dev-mock": "run-p dev mock",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write **/*.{js,jsx,ts,tsx,json}",
@@ -45,6 +47,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.2",
     "prettier": "^2.3.1",
     "prettier-eslint": "^12.0.0",
